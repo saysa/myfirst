@@ -15,3 +15,13 @@ Route::get('/', function()
 {
 	return View::make('hello');
 });
+
+Route::get('users', function()
+{
+	return 'Users!';
+});
+
+/*
+ * Or we can target the UserController et the getIndex method
+ * Route::get('users', 'UserController@getIndex');
+ */
